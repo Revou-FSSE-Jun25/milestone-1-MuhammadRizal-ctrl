@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Muhammad Rizal</title>
+    <meta name="description" content="Portfolio of Muhammad Rizal, a software engineer passionate about building scalable web applications and clean code.">
+    <meta name="author" content="Muhammad Rizal">
+
+    <meta property="og:title" content="Muhammad Rizal – Software Engineer Portfolio">
+    <meta property="og:description" content="Portfolio of Muhammad Rizal, a software engineer passionate about building scalable web applications and clean code.">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:title" content="Muhammad Rizal – Software Engineer Portfolio">
+    <meta name="twitter:description" content="Portfolio of Muhammad Rizal, a software engineer passionate about building scalable web applications and clean code.">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assests/letter-m (1).png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assests/letter-m (1).png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assests/letter-m (1).png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assests/letter-m (1).png">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -15,11 +32,11 @@
         
         <nav>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Experience</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -27,7 +44,7 @@
     <!-- Main content  -->
     <main>
         <!-- Section: Hero -->
-         <section>
+         <section id="hero">
             <img src="./assests/1750939045306.jpg" alt="Profile Picture"/>
             <blockquote>
                 “Every line I write brings me one step closer to the engineer I want to be.”
@@ -43,7 +60,7 @@
          </section>
 
         <!-- Section: About -->
-            <section>
+            <section id="about">
                 <h2>About Me</h2>
                 <p>
                     I’m a engineer passionate about crafting accessible, responsive digital experiences that are both thoughtfully designed and technically robust. My favorite work lives at the intersection of backend logic and frontend usability, I'm building interfaces that not only work, but feel right.
@@ -63,7 +80,7 @@
             </section>
 
             <!-- Section: Experience-->
-            <section>
+            <section id="experience">
                 <h2>Experience</h2>
                 <ul>
                     <li>
@@ -88,22 +105,53 @@
             </section>
 
             <!-- Section: Projects -->
-            <section>
+            <section id="projects">
                 <h2>Projects</h2>
                 <article>
                     <div>
                         <img alt="Website Preview"/>
                     </div>
                     <div>
-                        <h3><a href="">Portfolio Website</a></h3>
+                        <h3><a href="#">Portfolio Website</a></h3>
                         <p>A custom-built portfolio website to showcase my experience, background, and projects as a fullstack developer. Designed and developed from scratch using HTML, CSS, and JavaScript, with plans to expand into a dynamic fullstack project in the future.
                         </p>
                         <p>Technologies: HTML, CSS, JavaScript, GitHub</p>
                     </div>
-                    <a href="">GitHub</a>
+                    <div>
+                    <a href="">View on Github</a>
+                    </div>
                 </article>
             </section>
+
+            <!-- Section: Contact -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>
+                    Interested in working together or just want to say hi? Feel free to reach out! I’m always open to discussing new projects, ideas, or opportunities.
+                </p>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Leave a message" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </section>
     </main>
-    <footer></footer>
+    <footer>
+        <ul>
+            <li><a href="https://github.com/MuhammadRizal-ctrl" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/muhammad-rizal-fatkhurrohman/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://medium.com/@rizalfatkhurikh" target="_blank"><i class="fab fa-medium"></i></a></li>
+            <li><a href="https://www.instagram.com/rizalfatkhurikh/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="mailto:rizalfatkhurikh@email.com"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <p>&copy; 2025 Muhammad Rizal. All rights reserved.</p>
+    </footer>
 </body>
 </html>
