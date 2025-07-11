@@ -6,7 +6,7 @@ Hi! I'm Muhammad Rizal, a career-switcher, and fullstack developer in the making
 
 ## Live Preview
 
-Check out the live site here: 
+Check out the live site here: [Portfolio Live Preview](https://revou-fsse-jun25.github.io/milestone-1-MuhammadRizal-ctrl/)
 (Give it a look - I promise it loads fast)
 
 ---
@@ -24,7 +24,7 @@ Check out the live site here:
 
 - HTML
 - CSS
-- JavaScript coming soon
+- JavaScript (coming soon)
 - Deployed on GitHub Pages
 
 ---
@@ -33,12 +33,25 @@ Check out the live site here:
 
 - Home - Quick intro, bold first impression
 - About Me - My background, skills, and why I switched careers
-- Projects - A few cool things I've build (and more on the way)
+- Projects - A few cool things I've built (and more on the way)
 - Contact - Say hi, hire me, or just send good vibes
 
 ---
 
 ## Running Locally
 
-Wanna see the code up close?
+Want to see the code up close or run the site on your machine?
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Revou-FSSE-Jun25/milestone-1-MuhammadRizal-ctrl.git
+   ```
+2. Open the folder in your file explorer.
+3. Double-click `index.html` to open it in your browser.
+
+---
+
+## Repository
+
+Find the full code and history here: [GitHub Repository](https://github.com/Revou-FSSE-Jun25/milestone-1-MuhammadRizal-ctrl)
 
