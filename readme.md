@@ -1,57 +1,69 @@
-# My Portfolio Website
+# Muhammad Rizal Portfolio
 
-Hi! I'm Muhammad Rizal, a career-switcher, and fullstack developer in the making. This is my personal portfolio website, built to showcase my projects, skills, and professional journey.
-
----
-
-## Live Preview
-
-Check out the live site here: [Portfolio Live Preview](https://revou-fsse-jun25.github.io/milestone-1-MuhammadRizal-ctrl/)
-(Give it a look - I promise it loads fast)
+A modern, responsive personal portfolio website inspired by [brittanychiang.com](https://brittanychiang.com/), built with semantic HTML and custom vanilla CSS.
 
 ---
 
-## What's the Point?
-
-- Show My Work - Real project and real code also the tech I've used
-- Tell My Story - Documenting all my journey and maybe what's my playlist
-- Build My Brand - Sharing my background, story, and professional journey
-- Connect with You - Employers, clients, collaborators — come say hi!
+## Overview
+This website showcases Muhammad Rizal's background, experience, and projects as a software engineer. The design is clean, accessible, and fully responsive, with a sidebar navigation and a focus on usability and modern web standards.
 
 ---
 
-## Build With
-
-- HTML
-- CSS
-- JavaScript (coming soon)
-- Deployed on GitHub Pages
-
----
-
-## What You'll Find
-
-- Home - Quick intro, bold first impression
-- About Me - My background, skills, and why I switched careers
-- Projects - A few cool things I've built (and more on the way)
-- Contact - Say hi, hire me, or just send good vibes
+## Features
+- **Sidebar Navigation:** Fixed sidebar with name, title, navigation links, and social icons.
+- **Hero Section:** Profile photo and personal quote, styled with a rounded frame.
+- **About Section:** Introduction and background information.
+- **Experience Section:** Timeline of professional experience, styled in a two-column layout with clickable company links and tech tags.
+- **Projects Section:** Project list with preview images, descriptions, tech tags, and external links. 
+- **Contact Section:** Clean, accessible contact form styled to match the site.
+- **Footer:** Simple, centered footer.
+- **Custom CSS Styling:** All layout, color palette, and responsive design implemented with vanilla CSS, using a custom color palette.
+- **Responsive Design:** Works on desktop, tablet, and mobile.
 
 ---
 
-## Running Locally
-
-Want to see the code up close or run the site on your machine?
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Revou-FSSE-Jun25/milestone-1-MuhammadRizal-ctrl.git
-   ```
-2. Open the folder in your file explorer.
-3. Double-click `index.html` to open it in your browser.
+## Technologies Used
+- **HTML5** (semantic, accessible markup)
+- **CSS3** (custom, no frameworks)
+- **Font Awesome** (for social icons)
+- **Google Fonts: Inter** (main font)
 
 ---
 
-## Repository
+## Screenshots
 
-Find the full code and history here: [GitHub Repository](https://github.com/Revou-FSSE-Jun25/milestone-1-MuhammadRizal-ctrl)
+![Website Screenshot](./assests/Screenshot%20(155).png)
+
+---
+
+## Project Structure
+
+```
+├── assests/
+│   ├── 1750939045306.jpg           # Profile photo
+│   ├── letter-m (1).png            # Favicon
+│   ├── letter-m.png                # Additional asset
+│   ├── resume - Muhammad Rizal.pdf # Resume
+│   └── Screenshot (155).png        # Website screenshot
+├── index.html                      # Main HTML file
+├── style.css                       # Custom CSS styles
+├── readme.md                       # Project documentation
+```
+
+---
+
+## How to Run Locally
+1. **Clone or download** this repository.
+2. Open `index.html` in your browser (no build step required).
+3. All assets and styles are included locally.
+
+---
+
+## Credits
+- Inspired by [brittanychiang.com](https://brittanychiang.com/)
+- Designed and coded by Muhammad Rizal
+
+---
+
+For questions or contributions, feel free to open an issue or contact me via the links in the sidebar!
 
