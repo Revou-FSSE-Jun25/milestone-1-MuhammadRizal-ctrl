@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- Particles background -->
+    <div id="particles-js"></div>
+    
     <!-- Main layout: sidebar + main content -->
     <div class="layout">
       <!-- Sidebar: name, nav, social -->
@@ -62,7 +65,7 @@
       <main class="main-content">
         <!-- Hero section: profile photo and quote -->
         <section id="hero">
-          <img src="./assests/1750939045306.jpg" alt="Profile Picture" />
+                           <img src="./assets/images/1750939045306.jpg" alt="Profile Picture" />
           <blockquote>
             “Every line I write brings me one step closer to the engineer I want to be.”
           </blockquote>
@@ -113,14 +116,14 @@
               <p>I began my career in tech as an IT Support Engineer, where I provided L1–L2 support for 150+ internal users and 10+ external clients including Bank BTN, Bank BJB, and BPJS Kesehatan. I resolved over 200 tickets monthly, troubleshooting network issues, user access problems, Windows Server environments, and Cisco/Ruckus equipment. I also contributed to documentation, SOPs, and on-call rotations, ensuring 24/7 availability. This hands-on experience built my foundation in infrastructure support and gave me a customer-first mindset that I now bring into software development.</p>
             </li>
           </ul>
-          <a href="./assests/resume - Muhammad Rizal.pdf" target="_blank">View Full Resume</a>
+                           <a href="./assets/documents/resume - Muhammad Rizal.pdf" target="_blank">View Full Resume</a>
         </section>
         <!-- Projects section: portfolio projects -->
         <section id="projects">
           <ul class="project-list">
             <li class="project-item">
               <div class="project-thumb">
-                <img src="./assests/Screenshot (155).png" alt="Portfolio Website Preview" />
+                                       <img src="./assets/images/Screenshot (155).png" alt="Portfolio Website Preview" />
               </div>
               <div class="project-info">
                 <h3><a href="https://revou-fsse-jun25.github.io/milestone-1-MuhammadRizal-ctrl/" target="_blank">Portfolio Website <span style='font-size:1em;'>&#8599;</span></a></h3>
@@ -159,5 +162,143 @@
         </footer>
       </main>
     </div>
+    
+    <!-- Particles.js script -->
+               <script src="./assets/js/particles.min.js"></script>
+    <script>
+      // Wait for DOM to load
+      document.addEventListener('DOMContentLoaded', function() {
+        // Check if particles container exists
+        const particlesContainer = document.getElementById('particles-js');
+        if (!particlesContainer) {
+          console.error('Particles container not found');
+          return;
+        }
+        
+        console.log('Particles container found:', particlesContainer);
+        
+        // Check if particles.js is loaded
+        if (typeof particlesJS !== 'undefined') {
+          console.log('Particles.js loaded successfully');
+          
+                     // Initialize particles.js with custom configuration
+           particlesJS('particles-js', {
+             "particles": {
+               "number": {
+                 "value": 100,
+                 "density": {
+                   "enable": true,
+                   "value_area": 800
+                 }
+               },
+               "color": {
+                 "value": "#A7D129"
+               },
+               "shape": {
+                 "type": "circle",
+                 "stroke": {
+                   "width": 0,
+                   "color": "#000000"
+                 },
+                 "polygon": {
+                   "nb_sides": 5
+                 }
+               },
+               "opacity": {
+                 "value": 0.8,
+                 "random": true,
+                 "anim": {
+                   "enable": false,
+                   "speed": 1,
+                   "opacity_min": 0.4,
+                   "sync": false
+                 }
+               },
+               "size": {
+                 "value": 5,
+                 "random": true,
+                 "anim": {
+                   "enable": false,
+                   "speed": 40,
+                   "size_min": 0.1,
+                   "sync": false
+                 }
+               },
+               "line_linked": {
+                 "enable": true,
+                 "distance": 150,
+                 "color": "#A7D129",
+                 "opacity": 0.6,
+                 "width": 2
+               },
+               "move": {
+                 "enable": true,
+                 "speed": 3,
+                 "direction": "none",
+                 "random": false,
+                 "straight": false,
+                 "out_mode": "out",
+                 "bounce": false,
+                 "attract": {
+                   "enable": false,
+                   "rotateX": 600,
+                   "rotateY": 1200
+                 }
+               }
+             },
+             "interactivity": {
+               "detect_on": "canvas",
+               "events": {
+                 "onhover": {
+                   "enable": true,
+                   "mode": "grab"
+                 },
+                 "onclick": {
+                   "enable": true,
+                   "mode": "push"
+                 },
+                 "resize": true
+               },
+               "modes": {
+                 "grab": {
+                   "distance": 140,
+                   "line_linked": {
+                     "opacity": 0.8
+                   }
+                 },
+                 "bubble": {
+                   "distance": 400,
+                   "size": 40,
+                   "duration": 2,
+                   "opacity": 8,
+                   "speed": 3
+                 },
+                 "repulse": {
+                   "distance": 200,
+                   "duration": 0.4
+                 },
+                 "push": {
+                   "particles_nb": 2
+                 },
+                 "remove": {
+                   "particles_nb": 2
+                 }
+               }
+             },
+             "retina_detect": true
+           });
+        } else {
+          console.error('Particles.js not loaded');
+          // Try loading from CDN as fallback
+          const script = document.createElement('script');
+          script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+          script.onload = function() {
+            console.log('Particles.js loaded from CDN');
+            // Re-initialize here if needed
+          };
+          document.head.appendChild(script);
+        }
+      });
+    </script>
 </body>
 </html>

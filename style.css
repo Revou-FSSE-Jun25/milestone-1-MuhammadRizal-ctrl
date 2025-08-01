@@ -1,6 +1,34 @@
 /*
-  Portfolio Style inspired by brittanychiang.com
-  Font: Inter, Font sizes/colors/layouts match as close as possible
+  ========================================
+  Muhammad Rizal Portfolio Website
+  ========================================
+  
+  A modern, responsive portfolio website inspired by brittanychiang.com
+  Built with semantic HTML5, custom vanilla CSS3, and particles.js
+  
+  Features:
+  - Fixed sidebar navigation with social links
+  - Interactive particles background animation
+  - Responsive design (mobile-first approach)
+  - Custom color palette with dark theme
+  - Accessible and semantic markup
+  
+  File Structure:
+  - index.html: Main HTML structure
+  - style.css: All custom styling (this file)
+  - assets/js/particles.min.js: Particles.js library
+  - assets/js/particlesjs-config.json: Particles configuration
+  - assets/images/: All image assets
+  - assets/documents/: PDF documents
+  
+  Browser Support:
+  - Chrome (recommended)
+  - Firefox, Safari, Edge
+  - Mobile browsers
+  
+  Author: Muhammad Rizal
+  Version: 1.0.0
+  Last Updated: August 2025
 */
 
 /* =====================
@@ -22,6 +50,46 @@
 }
 
 /* =====================
+   Particles Background
+   ===================== */
+/* 
+  Interactive particles background using particles.js
+  - Fixed positioning covers entire viewport
+  - Z-index layering ensures particles appear above background but below content
+  - Transparent background allows dark theme to show through
+  - Overflow hidden prevents scrollbars from particle movement
+*/
+#particles-js {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: transparent;
+  overflow: hidden;
+}
+
+/* Ensure all content is above particles */
+.layout {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+}
+
+.sidebar {
+  position: relative;
+  z-index: 10;
+  background: transparent;
+}
+
+.main-content {
+  position: relative;
+  z-index: 5;
+  background: transparent;
+}
+
+/* =====================
    Base Styles
    ===================== */
 html, body {
@@ -40,6 +108,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: var(--color-bg);
 }
 
 /* =====================
@@ -51,9 +120,18 @@ body {
   background: var(--color-bg);
 }
 
-/* Sidebar styles */
+/* =====================
+   Sidebar Layout & Styling
+   ===================== */
+/* 
+  Fixed sidebar containing:
+  - Header with name, title, and tagline
+  - Navigation menu
+  - Social media links
+  - Responsive design with mobile adaptations
+*/
 .sidebar {
-  background: var(--color-bg);
+  background: transparent;
   color: var(--color-text);
   width: 340px;
   min-width: 260px;
@@ -66,7 +144,7 @@ body {
   align-items: flex-start;
   padding: 0 48px;
   border: none;
-  z-index: 1;
+  z-index: 10;
   box-shadow: none;
 }
 
@@ -140,7 +218,6 @@ body {
   gap: 20px;
   list-style: none;
   padding: 0;
-  margin-top: 0;
 }
 
 .sidebar-social li a {
@@ -162,7 +239,7 @@ body {
   max-width: 900px;
   padding: 64px 48px 48px 48px;
   min-height: 100vh;
-  background: var(--color-bg);
+  background: transparent;
   display: flex;
   flex-direction: column;
 }
@@ -181,6 +258,13 @@ body {
 /* =====================
    Hero Section
    ===================== */
+/* 
+  Welcome section featuring:
+  - Profile photo with rounded frame and shadow
+  - Personal quote with elegant typography
+  - Centered layout with proper spacing
+  - Transparent background for particles visibility
+*/
 #hero {
   display: flex;
   flex-direction: column;
@@ -188,6 +272,7 @@ body {
   justify-content: center;
   margin-bottom: 48px;
   margin-top: 24px;
+  background: transparent;
 }
 
 #hero img {
@@ -198,7 +283,7 @@ body {
   border: 3px solid var(--color-accent);
   box-shadow: 0 4px 24px 0 rgba(2,12,27,0.10);
   margin-bottom: 28px;
-  background: #1a233a;
+  background: transparent;
 }
 
 #hero blockquote {
@@ -208,11 +293,20 @@ body {
   text-align: center;
   margin: 0;
   max-width: 400px;
+  background: transparent;
 }
 
 /* =====================
    Experience Section
    ===================== */
+/* 
+  Professional experience timeline with:
+  - Two-column layout on desktop (date + content)
+  - Clickable company links
+  - Tech stack tags for each role
+  - Responsive design for mobile devices
+  - Proper typography hierarchy
+*/
 #experience ul {
   list-style: none;
   padding: 0;
@@ -300,6 +394,14 @@ body {
 /* =====================
    Projects Section
    ===================== */
+/* 
+  Portfolio projects showcase with:
+  - Project thumbnails and descriptions
+  - Tech stack tags for each project
+  - External links to live demos and code
+  - Hover effects and smooth transitions
+  - Responsive grid layout
+*/
 #projects {
   margin-bottom: 60px;
 }
@@ -342,7 +444,7 @@ body {
   height: 110px;
   object-fit: cover;
   border-radius: 8px;
-  background: #222a3a;
+  background: transparent;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
 }
 
@@ -389,7 +491,7 @@ body {
 
 .project-tag {
   display: inline-block;
-  background: var(--color-bg);
+  background: transparent;
   color: var(--color-accent);
   font-size: 0.95rem;
   font-weight: 500;
@@ -397,7 +499,7 @@ body {
   padding: 4px 16px;
   letter-spacing: 0.03em;
   margin: 0;
-  border: none;
+  border: 1px solid var(--color-accent);
 }
 
 .project-links {
@@ -418,6 +520,14 @@ body {
 /* =====================
    Contact Section
    ===================== */
+/* 
+  Contact form and information with:
+  - Accessible form inputs and labels
+  - Transparent backgrounds for particles visibility
+  - Hover and focus states for better UX
+  - Responsive design for all screen sizes
+  - Proper form validation styling
+*/
 #contact {
   background: none;
   border-radius: 0;
@@ -452,7 +562,7 @@ body {
 }
 
 #contact input, #contact textarea {
-  background: var(--color-bg);
+  background: transparent;
   color: var(--color-text);
   border: 1.5px solid var(--color-accent);
   border-radius: 6px;
@@ -541,6 +651,13 @@ footer ul li a:hover, footer ul li a:focus {
 /* =====================
    Responsive Styles
    ===================== */
+/* 
+  Mobile-first responsive design with breakpoints:
+  - 1100px: Large desktop adjustments
+  - 900px: Tablet and small desktop
+  - 600px: Mobile devices
+  - min-width 900px: Desktop-specific features
+*/
 @media (max-width: 1100px) {
   .main-content {
     padding: 48px 24px 24px 24px;
@@ -666,10 +783,33 @@ footer ul li a:hover, footer ul li a:focus {
   }
   .main-content {
     margin-left: 400px;
+    z-index: 5;
   }
 }
 
 /* Remove old header styles if present */
 header {
   display: none !important;
+} 
+
+/* =====================
+   About Section
+   ===================== */
+#about {
+  background: transparent;
+}
+
+#about p {
+  background: transparent;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+}
+
+/* Ensure text readability over particles */
+.sidebar-header h1,
+.sidebar-header h2,
+.sidebar-header p,
+.sidebar-nav li a,
+#hero blockquote,
+#about p {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.9);
 } 
